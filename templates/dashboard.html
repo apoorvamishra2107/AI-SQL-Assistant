@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard • AI SQL Assistant</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="main-container">
+
+    <div class="header">
+        <h1><center>AI SQL Assistant</center></h1>
+        <p><center>Ask questions about your sales data using natural language</center></p>
+    </div>
+
+    <div class="query-box">
+        <form method="post">
+            <input name="question" placeholder="e.g. Total sales by country" required>
+            <button>Ask AI</button>
+        </form>
+    </div>
+
+    {% if query %}
+    <div class="card">
+        <h3>Generated SQL</h3>
+        <div class="sql-box">{{query}}</div>
+    </div>
+    {% endif %}
+
+    {% if table %}
+    <div class="card">
+        <h3>Results</h3>
+        <div class="table-container">
+            {{table|safe}}
+        </div>
+    </div>
+    {% endif %}
+
+    {% if chart %}
+    <div class="card">
+        <h3>Visualization</h3>
+        {{chart|safe}}
+    </div>
+    {% endif %}
+
+</div>
+
+</body>
+</html>

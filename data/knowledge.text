@@ -1,0 +1,3 @@
+This dataset contains historical sales records of products.
+Fields include orderdate, sales, customername, country, and productline.
+You can ask business questions about trends, performance, and regions.

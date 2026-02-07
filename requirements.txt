@@ -1,0 +1,8 @@
+flask
+gunicorn
+pandas
+psycopg2-binary
+flask-bcrypt
+plotly
+ollama
+numpy

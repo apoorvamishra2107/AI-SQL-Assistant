@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background: linear-gradient(120deg, #eef2f7, #dfe9f3);
+}
+
+.auth-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.auth-card {
+    background: white;
+    padding: 40px;
+    width: 320px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    text-align: center;
+}
+
+.auth-card h1 {
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    color: #777;
+    margin-bottom: 25px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1e4fd1;
+}
+
+.switch {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+/* DASHBOARD */
+
+.main-container {
+    width: 85%;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.header h1 {
+    margin-bottom: 5px;
+}
+
+.header p {
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.query-box {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 5px 12px rgba(0,0,0,0.06);
+    margin-bottom: 20px;
+}
+
+.query-box input {
+    width: 75%;
+}
+
+.query-box button {
+    width: 20%;
+    margin-left: 10px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 12px rgba(0,0,0,0.06);
+}
+
+.sql-box {
+    background: #f4f6fa;
+    padding: 10px;
+    border-radius: 6px;
+    font-family: monospace;
+    overflow-x: auto;
+}
+
+.table-container {
+    overflow-x: auto;
+}
